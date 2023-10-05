@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Ess6</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+</body>
+<script>
+    class RailwayForm{
+        submit(){
+            alert(this.name + ": Your Form is Submitted")
+        }
+        cancel(){
+            alert(this.name + ": This Form is Cancelled")
+        }
+        fill(givenname){
+            this.name = givenname
+        }
+    }
+
+    //create a form for harry
+    let = new RailwayForm()
+    //Fill the form with harry's details
+    harryForm.fill("Harry")
+
+    //create a form for rohan
+    let rohanForm = new RailwayForm()
+    //Fill the form with rohan's details
+    rohanForm.fill("Rohan")
+
+    harryForm.submit()
+    rohanForm.submit()
+    rohanForm.cancel()
+</script>
+</html>
